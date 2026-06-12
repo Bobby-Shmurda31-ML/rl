@@ -69,7 +69,8 @@ class Trainer:
         self.agent = agent
         self.n_steps = n_steps
         self.batch_size = batch_size
-        self.callbacks = CallbacksList(callbacks) if isinstance(callbacks, list) else callbacks
+        # ИЗМЕНЕНО: пустой CallbacksList по умолчанию вместо None
+        self.callbacks = CallbacksList(callbacks if callbacks is not None else [])
 
         if isinstance(agent, NaiveDQN):
             self.buffer = OffPolicyReplayBuffer(max_len=buffer_max_len)
