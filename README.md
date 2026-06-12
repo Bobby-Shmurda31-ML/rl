@@ -45,13 +45,6 @@ agent = DDQN(env, lr=5e-4, load_path="agent.pt")  # веса загружены,
 pip install git+https://github.com/Bobby-Shmurda31-ML/rl.git
 ```
 
-Или локально:
-```bash
-git clone https://github.com/Bobby-Shmurda31-ML/rl.git
-cd rl
-pip install -e .
-```
-
 ## Планы
 - [x] NaiveDQN / DQN / DDQN
 - [ ] A2C
