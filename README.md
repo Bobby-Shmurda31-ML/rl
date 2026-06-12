@@ -42,9 +42,14 @@ agent = DDQN(env, lr=5e-4, load_path="agent.pt")  # веса загружены,
 ## Установка
 
 ```bash
+pip install git+https://github.com/Bobby-Shmurda31-ML/rl.git
+```
+
+Или локально:
+```bash
 git clone https://github.com/Bobby-Shmurda31-ML/rl.git
 cd rl
-pip install -r requirements.txt
+pip install -e .
 ```
 
 ## Планы
