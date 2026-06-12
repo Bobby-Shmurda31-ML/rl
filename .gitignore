@@ -8,3 +8,4 @@ venv/
 .venv/
 CLAUDE.md
 .claude/
+main.py
