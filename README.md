@@ -43,7 +43,7 @@ agent = DDQN(env, lr=5e-4, load_path="agent.pt")  # веса загружены,
 
 ```bash
 git clone https://github.com/Bobby-Shmurda31-ML/rl.git
-cd rl-learning
+cd rl
 pip install -r requirements.txt
 ```
 
